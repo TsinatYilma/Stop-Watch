@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/images.png">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body class="bg-bg">
+    <div class="head pl-2 pt-5">
+        <h2 class="title text-3xl text-red-300 ts:text-5xl lg:text-6xl"><span class="text-pinky font-black">toggle</span> time</h2>
+    </div>
+
+    <div class="main text-white flex flex-col pt-24 items-center">
+        <h3 class="header text-[20px] ts:text-3xl">
+            Online Timer & Stop Watch
+        </h3>
+
+        <div id="time" class=" w-full mt-5 inline-block">
+
+            <div
+                class="realcounters h-[60px] ts:h-[90px] sm:h-[200px] relative flex items-center justify-around sm:justify-center sm:gap-10  sm:static">
+               
+                <div class="hour">
+                  
+                    <span class="digit font-black text-[50px] ts:text-[80px] sm:text-[140px]" id="hr">
+                        00</span>
+                    <span class="txt text-[15px]">Hr</span>
+                </div>
+                <div class="minute">
+                    <span class="digit font-black text-[50px] ts:text-[80px] sm:text-[140px]" id="min">
+                        00</span>
+                    <span class="txt text-[15px]">Min</span>
+                </div>
+                <div class="second sm:relative">
+                    <span
+                    class="digit font-black  text-[20px] absolute top-0 right-0 transform translate-x-[-30%] translate-y-[-30%] sm:top-5"
+                    id="count">
+                    00</span>
+                    <span class="digit font-black text-[50px] ts:text-[80px] sm:text-[140px]" id="sec">
+                        00</span>
+                    <span class="txt text-[15px]">Sec</span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons mt-12 w-full flex justify-center gap-10 z-50">
+            <button
+                class="start w-32 h-14 flex justify-center items-center bg-button_color border-3 border-black rounded-full font-bold hover:bg-pinky">
+                Start</button>
+            <button
+                class="lap w-32 h-14 flex justify-center items-center bg-button_color border-3 border-black rounded-full font-bold hover:bg-pinky">Lap</button>
+            <button
+                class="reset w-32 h-14 flex justify-center items-center bg-button_color border-3 border-black rounded-full font-bold hover:bg-pinky">Reset</button>
+        </div>
+        <div class="lap-board mt-20 w-full flex flex-col items-center">
+        </div>
+    </div>
+    <script src="public/active.js"></script>
+</body>
+
+</html>
